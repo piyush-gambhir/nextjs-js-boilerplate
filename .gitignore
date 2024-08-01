@@ -27,7 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
+.env*
 # vercel
 .vercel
 
@@ -40,3 +40,6 @@ pnpm-lock.yaml
 
 # bun.lockb
 bun.lockb
+
+# local db
+local.db
