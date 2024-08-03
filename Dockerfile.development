@@ -7,8 +7,8 @@ RUN npm install -g pnpm
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and pnpm-lock.yaml files
-COPY package.json pnpm-lock.yaml ./
+# Copy package.json file
+COPY package.json ./
 
 # Set the working directory inside the container
 WORKDIR /app

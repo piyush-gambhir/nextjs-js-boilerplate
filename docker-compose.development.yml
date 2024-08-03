@@ -1,7 +1,8 @@
 version: '3.8'
 
 services:
-  app:
+  nextjs-js-boilerplate:
+    container_name: nextjs-js-boilerplate
     build:
       context: .
       dockerfile: Dockerfile.development

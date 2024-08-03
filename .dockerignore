@@ -1,4 +1,5 @@
-node_modules
-build
-.next
-.git
+node_modules/
+.git/
+.next/
+.vscode/
+.env
