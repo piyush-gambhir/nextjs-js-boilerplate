@@ -43,3 +43,9 @@ bun.lockb
 
 # local db
 local.db
+
+# eslint
+.eslintcache
+
+# next.config.js
+next.config.*
