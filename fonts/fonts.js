@@ -1,14 +1,7 @@
-import localFont from "next/font/local";
+// Local fonts
+import { NeueMontreal } from "./localFonts";
 
-// Google Fonts
-import { Inter as InterFont } from "next/font/google";
-import { Poppins as PoppinsFont } from "next/font/google";
+// Google fonts
+import { Inter, Poppins, BebasNeue, Roboto } from "./googleFonts";
 
-export const Inter = InterFont({ subsets: ["latin"] });
-
-export const Poppins = PoppinsFont({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+export { NeueMontreal, Inter, Poppins, Roboto, BebasNeue };
