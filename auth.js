@@ -6,6 +6,13 @@ import Github from "next-auth/providers/github";
 import { hashPassword, verifyPassword } from "./lib/utils/saltAndHashPassword";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  debug: env.NODE_ENV === "development",
+  pages: {
+    signIn: "/signin",
+    signOut: "/signout",
+    // verifyRequest: "",
+  },
+  secret: env.AUTH_SECRET,
   providers: [
     Credentials({
       // You can specify which fields should be submitted, by adding keys to the `credentials` object.
