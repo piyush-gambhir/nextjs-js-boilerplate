@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-import { validateImageFile } from "@/lib/utils/validation";
+import { validateImageFile } from "@/lib/zod/validation";
 
 function ImageUpload() {
   const [image, setImage] = useState(null);
